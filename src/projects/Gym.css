@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap");
+
+.gym-page {
+  min-height: 100vh;
+  background: #f3f3ef;
+  color: #111;
+  font-family: "Inter", sans-serif;
+}
+
+.gym-page * {
+  box-sizing: border-box;
+}
+
+.gym-header {
+  height: 82px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8d8d2;
+  background: #f3f3ef;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.gym-logo {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 26px;
+  letter-spacing: -1px;
+}
+
+.gym-logo span {
+  color: #c9ff00;
+  -webkit-text-stroke: 1px #111;
+}
+
+.gym-back {
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.gym-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.gym-nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.gym-nav a:hover {
+  opacity: 0.55;
+}
+
+.gym-header-button {
+  background: #c9ff00;
+  color: #111;
+  padding: 13px 22px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* HERO */
+
+.gym-hero {
+  min-height: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #c9ff00;
+}
+
+.gym-hero-content {
+  padding: 100px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gym-label {
+  margin: 0 0 22px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.gym-hero h1 {
+  margin: 0;
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(60px, 8vw, 125px);
+  line-height: 0.86;
+  letter-spacing: -6px;
+}
+
+.gym-hero h1 span,
+.gym-section-heading h2 span,
+.gym-about-content h2 span,
+.gym-motivation h2 span,
+.gym-contact h2 span {
+  color: transparent;
+  -webkit-text-stroke: 2px #111;
+}
+
+.gym-hero-text {
+  max-width: 500px;
+  margin: 35px 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.gym-hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.gym-button {
+  display: inline-block;
+  padding: 17px 25px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.gym-button-dark {
+  background: #111;
+  color: white;
+}
+
+.gym-button-light {
+  border: 2px solid #111;
+  color: #111;
+}
+
+.gym-hero-image {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.gym-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.gym-hero-badge {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background: #c9ff00;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gym-hero-badge strong {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 35px;
+}
+
+.gym-hero-badge span {
+  font-size: 9px;
+  font-weight: 800;
+}
+
+/* STATS */
+
+.gym-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #111;
+  color: white;
+}
+
+.gym-stats div {
+  padding: 45px 20px;
+  border-right: 1px solid #333;
+  text-align: center;
+}
+
+.gym-stats strong {
+  display: block;
+  color: #c9ff00;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 42px;
+}
+
+.gym-stats span {
+  display: block;
+  margin-top: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* PROGRAMS */
+
+.gym-programs {
+  padding: 120px 8%;
+}
+
+.gym-section-heading {
+  max-width: 700px;
+  margin-bottom: 70px;
+}
+
+.gym-section-heading.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.gym-section-heading h2,
+.gym-about-content h2,
+.gym-motivation h2,
+.gym-contact h2 {
+  margin: 0;
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(50px, 7vw, 90px);
+  line-height: 0.9;
+  letter-spacing: -4px;
+}
+
+.gym-section-heading > p:last-child {
+  max-width: 500px;
+  margin-top: 30px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.gym-program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gym-program-card {
+  min-height: 330px;
+  padding: 35px;
+  background: white;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.gym-program-number {
+  color: #777;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.gym-program-card h3 {
+  margin-top: auto;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 25px;
+}
+
+.gym-program-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.gym-program-card a {
+  margin-top: 20px;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* ABOUT */
+
+.gym-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #111;
+  color: white;
+}
+
+.gym-about-image {
+  min-height: 650px;
+}
+
+.gym-about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.gym-about-content {
+  padding: 100px 9%;
+}
+
+.gym-about-content h2 {
+  margin-bottom: 40px;
+}
+
+.gym-about-content p {
+  max-width: 500px;
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.gym-about-list {
+  margin-top: 45px;
+}
+
+.gym-about-list div {
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+  display: flex;
+  gap: 25px;
+}
+
+.gym-about-list span {
+  color: #c9ff00;
+  font-size: 12px;
+}
+
+.gym-about-list strong {
+  font-size: 14px;
+}
+
+/* PRICES */
+
+.gym-prices {
+  padding: 120px 8%;
+}
+
+.gym-price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gym-price-card {
+  position: relative;
+  padding: 40px;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.gym-price-card.popular {
+  background: #c9ff00;
+  border-color: #111;
+  transform: translateY(-12px);
+}
+
+.gym-popular {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #111;
+  color: white;
+  padding: 10px 15px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.gym-price-name {
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.gym-price-card h3 {
+  margin: 25px 0 10px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 48px;
+}
+
+.gym-price-card h3 span {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.gym-price-description {
+  color: #666;
+  font-size: 13px;
+}
+
+.gym-price-card ul {
+  padding: 25px 0;
+  list-style: none;
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+}
+
+.gym-price-card li {
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.gym-price-card a {
+  display: block;
+  padding: 16px;
+  background: #111;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* MOTIVATION */
+
+.gym-motivation {
+  min-height: 550px;
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=90");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.gym-motivation h2 {
+  margin-bottom: 45px;
+}
+
+.gym-motivation h2 span {
+  -webkit-text-stroke-color: white;
+}
+
+/* CONTACT */
+
+.gym-contact {
+  padding: 120px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  background: #c9ff00;
+}
+
+.gym-contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gym-contact-info p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.gym-contact-info a {
+  margin-top: 25px;
+  color: #111;
+  font-weight: 800;
+}
+
+/* FOOTER */
+
+.gym-footer {
+  padding: 35px 5%;
+  background: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gym-footer p {
+  font-size: 10px;
+  color: #777;
+}
+
+.gym-footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 1000px) {
+  .gym-nav {
+    display: none;
+  }
+
+  .gym-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .gym-hero-image {
+    min-height: 500px;
+  }
+
+  .gym-program-grid,
+  .gym-price-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gym-price-card.popular {
+    transform: none;
+  }
+
+  .gym-about {
+    grid-template-columns: 1fr;
+  }
+
+  .gym-about-image {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 650px) {
+  .gym-header {
+    padding: 0 20px;
+  }
+
+  .gym-back {
+    font-size: 10px;
+  }
+
+  .gym-logo {
+    font-size: 20px;
+  }
+
+  .gym-header-button {
+    display: none;
+  }
+
+  .gym-hero-content {
+    padding: 70px 25px;
+  }
+
+  .gym-hero h1 {
+    font-size: 60px;
+    letter-spacing: -3px;
+  }
+
+  .gym-hero-image {
+    min-height: 400px;
+  }
+
+  .gym-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gym-stats div {
+    padding: 30px 10px;
+  }
+
+  .gym-stats strong {
+    font-size: 30px;
+  }
+
+  .gym-programs,
+  .gym-prices {
+    padding: 80px 25px;
+  }
+
+  .gym-section-heading h2,
+  .gym-about-content h2,
+  .gym-motivation h2,
+  .gym-contact h2 {
+    font-size: 50px;
+    letter-spacing: -2px;
+  }
+
+  .gym-about-content {
+    padding: 80px 25px;
+  }
+
+  .gym-contact {
+    padding: 80px 25px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .gym-footer {
+    padding: 30px 20px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
